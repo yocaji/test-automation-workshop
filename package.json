@@ -1,0 +1,23 @@
+{
+	"name": "test-automation-workshop",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test:headless": "npx playwright test",
+		"test": "npx playwright test --headed",
+		"test:ui": "npx playwright test --ui",
+		"format": "npx @biomejs/biome format --write .",
+		"lint": "npx @biomejs/biome lint .",
+		"check": "npx @biomejs/biome check --write ."
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"devDependencies": {
+		"@biomejs/biome": "2.4.9",
+		"@playwright/test": "^1.58.2",
+		"@types/node": "^25.5.0"
+	}
+}
